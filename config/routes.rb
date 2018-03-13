@@ -6,6 +6,6 @@ Rails.application.routes.draw do
 
   post '/students' => 'students#create'
   patch '/students/:id' => 'students#update'
-  destroy '/students/:id' => 'students#destroy'
+  delete '/students/:id' => 'students#destroy'
 
 end
