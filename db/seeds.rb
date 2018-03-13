@@ -15,4 +15,3 @@ Skill.create!([
   {student_id: 1, name: "Ruby"},
   {student_id: 1, name: "Javascript"}
 ])
-
