@@ -3,3 +3,5 @@ class AddPaperclipAttachment < ActiveRecord::Migration[5.1]
     add_attachment :students, :profile_photo
   end
 end
+
+
