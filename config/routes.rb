@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   get '/students' => 'students#index'
+
+
+  get '/educations' => 'educations#index'
+  post '/educations' => 'educations#create'
+  get '/educations/:id' => 'educations#show'
+  patch '/educations/:id' => 'educations#update'
+  delete '/educations/:id' => 'educations#destroy'
+
 
 end
