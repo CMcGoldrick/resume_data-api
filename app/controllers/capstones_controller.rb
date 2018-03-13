@@ -15,7 +15,8 @@ class CapstonesController < ApplicationController
     @capstone = Capstone.new(
                               name: params[:name],
                               description: params[:description],
-                              url: params[:url]
+                              url: params[:url],
+                              student_id: params[:student_id]
                               )
     if @capstone.save
       render 'show.json.jbuilder'
@@ -30,6 +31,7 @@ class CapstonesController < ApplicationController
     @capstone.name = params[:name] || @capstone.name
     @capstone.description = params[:description] || @capstone.description
     @capstone.url = params[:url] || @capstone.url
+    @capstone.student_id = params[:student_id] || @capstone.student_id
 
     if @capstone.save
       render 'show.json.jbuilder'
