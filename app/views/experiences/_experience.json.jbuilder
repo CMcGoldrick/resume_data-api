@@ -1,6 +1,8 @@
-json.student_first_name experience.student.first_name
-json.student_last_name experience.student.last_name
-json.student_id experience.student.id
+json.student do  
+  json.first_name experience.student.first_name
+  json.last_name experience.student.last_name
+  json.id experience.student.id
+end
 
 json.experience_id experience.id
 json.start_date experience.start_date
