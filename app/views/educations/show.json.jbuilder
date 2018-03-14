@@ -1,0 +1,1 @@
+json.partiual! @education, partial: "education", as: :education

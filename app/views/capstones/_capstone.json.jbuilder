@@ -1,6 +1,9 @@
-json.student_first_name capstone.student.first_name
-json.student_last_name capstone.student.last_name
-json.student_id capstone.student.id
+
+json.student do  
+  json.first_name capstone.student.first_name
+  json.last_name capstone.student.last_name
+  json.id capstone.student.id
+end
 
 json.capstone_id capstone.id
 json.name capstone.name
