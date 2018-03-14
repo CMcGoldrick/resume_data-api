@@ -9,4 +9,7 @@ json.capstone_id capstone.id
 json.name capstone.name
 json.description capstone.description
 json.url capstone.url
-json.screenshot capstone.screenshot
+json.screenshot_file_name capstone.screenshot_file_name
+json.screenshot_content_type capstone.screenshot_content_type
+json.screenshot_file_size capstone.screenshot_file_size
+json.screenshot_updated_at capstone.screenshot_updated_at

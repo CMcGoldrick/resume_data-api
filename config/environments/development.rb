@@ -37,6 +37,17 @@ Rails.application.configure do
   # Raise an error on page load if there are pending migrations.
   config.active_record.migration_error = :page_load
 
+  #Paperclip S3
+  config.paperclip_defaults = {
+    storage: :s3,
+    s3_region: ENV["us-east-2"],
+    s3_credentials: {
+      s3_host_name: ENV["AWS_S3_HOST_NAME"],
+      bucket: ENV["soc-resumes-api"],
+      access_key_id: ENV["AKIAJLPXA6KBHIT3WG3Q"],
+      secret_access_key: ENV["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"]
+      }
+    } 
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true

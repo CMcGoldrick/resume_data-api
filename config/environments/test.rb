@@ -29,6 +29,18 @@ Rails.application.configure do
   config.action_controller.allow_forgery_protection = false
   config.action_mailer.perform_caching = false
 
+  #Paperclip S3
+  config.paperclip_defaults = {
+    storage: :s3,
+    s3_region: ENV["us-east-2"],
+    s3_credentials: {
+      s3_host_name: ENV["AWS_S3_HOST_NAME"],
+      bucket: ENV["soc-resumes-api"],
+      access_key_id: ENV["AKIAJLPXA6KBHIT3WG3Q"],
+      secret_access_key: ENV["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"]
+      }
+    } 
+    
   # Tell Action Mailer not to deliver emails to the real world.
   # The :test delivery method accumulates sent emails in the
   # ActionMailer::Base.deliveries array.

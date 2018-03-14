@@ -45,6 +45,7 @@ class StudentsController < ApplicationController
     @student.personal_website_url = params[:personal_website_url] || @student.personal_website_url
     @student.online_resume_url = params[:online_resume_url] || @student.online_resume_url
     @student.github_url = params[:github_url] || @student.github_url
+    @student.profile_photo = params[:profile_photo] || @student.profile_photo
 
     @student.save
 
