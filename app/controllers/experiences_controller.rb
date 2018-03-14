@@ -1,6 +1,10 @@
 class ExperiencesController < ApplicationController
   def index
     @experiences = Experience.all
+    id = params[:student_id]
+    @experiences = @experiences.where("student_id = ?", params[:id] )
+
+
 
     render 'index.json.jbuilder'
   end

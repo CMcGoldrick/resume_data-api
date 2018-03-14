@@ -1,6 +1,8 @@
 class CapstonesController < ApplicationController
   def index
     @capstones = Capstone.all
+    id = params[:student_id]
+    @capstones = @capstones.where("student_id = ?", params[:id] )
 
     render 'index.json.jbuilder'
   end
