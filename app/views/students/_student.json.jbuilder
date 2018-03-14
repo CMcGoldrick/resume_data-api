@@ -9,6 +9,11 @@ json.linkedin_url student.linkedin_url
 json.personal_website_url student.personal_website_url
 json.online_resume_url student.online_resume_url
 json.github_url student.github_url
+json.profile_photo_file_name student.profile_photo_file_name
+json.profile_photo_content_type student.profile_photo_content_type
+json.profile_photo_file_size student.profile_photo_file_size
+json.profile_photo_updated_at student.profile_photo_updated_at
+
 
 json.experiences student.experiences
 

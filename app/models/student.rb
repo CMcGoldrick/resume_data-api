@@ -1,6 +1,12 @@
 class Student < ApplicationRecord
 
-  has_attached_file :profile_photo
+  has_attached_file :profile_photo,
+                    :styles => 
+                      { 
+                      :large => "600x600",
+                      :medium => "300x300#",
+                      :thumb => "200x200#"
+                      }
     
   validates_attachment :profile_photo,
     content_type: {

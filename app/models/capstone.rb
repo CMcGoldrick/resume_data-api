@@ -1,5 +1,11 @@
 class Capstone < ApplicationRecord
-  has_attached_file :screenshot
+  has_attached_file :screenshot,
+                    :styles => 
+                      { 
+                      :large => "600x600",
+                      :medium => "300x300#",
+                      :thumb => "200x200#"
+                      }
     
   validates_attachment :screenshot,
     content_type: {

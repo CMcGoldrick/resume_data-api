@@ -39,6 +39,18 @@ Rails.application.configure do
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # config.force_ssl = true
 
+  #Paperclip S3
+  config.paperclip_defaults = {
+    storage: :s3,
+    s3_region: ENV["us-east-2"],
+    s3_credentials: {
+      s3_host_name: ENV["AWS_S3_HOST_NAME"],
+      bucket: ENV["soc-resumes-api"],
+      access_key_id: ENV["AKIAJLPXA6KBHIT3WG3Q"],
+      secret_access_key: ENV["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"]
+      }
+    } 
+
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
   config.log_level = :debug
