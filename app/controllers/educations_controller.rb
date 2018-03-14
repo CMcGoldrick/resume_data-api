@@ -1,7 +1,7 @@
 class EducationsController < ApplicationController
 
   def index
-    @educations = Education.all 
+    @educations = Education.where("student_id = ?", params[:student_id])
 
     render 'index.json.jbuilder'
   end
