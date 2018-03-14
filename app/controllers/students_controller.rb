@@ -22,7 +22,8 @@ class StudentsController < ApplicationController
                             linkedin_url: params[:linkedin_url],
                             personal_website_url: params[:personal_website_url],
                             online_resume_url: params[:online_resume_url],
-                            github_url: params[:github_url]
+                            github_url: params[:github_url],
+                            profile_photo: params[:profile_photo]
                             )
 
     @student.save
