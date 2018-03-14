@@ -3,8 +3,8 @@ Student.create!([
   {first_name: "Josh", last_name: "Greenberg", email: "joshthegreenberg@gmail.com", phone_number: "1-630-200-8259", short_bio: "He's very smart.", twitter_handle: "@greenbergajosh", linkedin_url: nil, personal_website_url: "joshthegreenberg.com", online_resume_url: nil, github_url: "http://github.com/Teleportal", profile_photo_file_name: nil, profile_photo_content_type: nil, profile_photo_file_size: nil, profile_photo_updated_at: nil}
 ])
 Capstone.create!([
-  {name: "Card Capstone", description: "By far the greatest capstone ever seen", url: "google.com/thisisnotarealurl", student_id: 1},
-  {name: "Dungeons & Dragons Character Sheet App", description: "An exponentially complicated capstone not for the faint of heart.", url: "google.com/thismightbeaurl", student_id: 2}
+  {name: "Card Capstone", description: "By far the greatest capstone ever seen", url: "google.com/thisisnotarealurl", student_id: 1, screenshot_file_name: nil, screenshot_content_type: nil, screenshot_file_size: nil, screenshot_updated_at: nil},
+  {name: "Dungeons & Dragons Character Sheet App", description: "An exponentially complicated capstone not for the faint of heart.", url: "google.com/thismightbeaurl", student_id: 2, screenshot_file_name: nil, screenshot_content_type: nil, screenshot_file_size: nil, screenshot_updated_at: nil}
 ])
 Education.create!([
   {student_id: 1, start_date: "9/15/16", end_date: "5/15/17", degree: "BA in Philosophy", university: "University of Illinois at Chicago", details: "Studied a variety of subjects with a variety of professors."},
